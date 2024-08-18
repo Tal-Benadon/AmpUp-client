@@ -1,0 +1,44 @@
+.Sequence {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    // justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.done {
+    background-color: var(--text-color);
+    width: 5px;
+    height: 5px;
+    // background-color: rgba(255, 0, 0,);
+    border-radius: 100%;
+
+}
+
+.notdone {
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    width: 5px;
+    height: 5px;
+    // background-color: rgba(255, 0, 0,);
+    border-radius: 100%;
+}
+
+.today {
+    background-color: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    // background-color: rgba(255, 0, 0,);
+    border-radius: 100%;
+}
+
+.date {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,16 @@
+.sendbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.send {
+    font-size: 15px;
+    width: 250px;
+
+    // border: 2px solid firebrick;
+}
+
+.noText {
+    color: rgb(128, 128, 128);
+    pointer-events: none;
+}

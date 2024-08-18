@@ -1,0 +1,32 @@
+@import "../../global";
+
+.Deck {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-shrink: 0;
+    margin-top: 40px;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+
+  }
+
+  .bottom {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    flex-shrink: 0;
+  }
+}

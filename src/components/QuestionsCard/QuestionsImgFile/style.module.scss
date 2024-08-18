@@ -1,0 +1,42 @@
+@import "../../../global";
+
+
+.all {
+    display: flex;
+    gap: 10px;
+}
+
+.Input {
+    width: 100%;
+    padding: 20px 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px dashed white;
+    cursor: pointer;
+    border-radius: 20px;
+    @extend .lightBackground;
+}
+
+.Input2 {
+    display: none;
+}
+
+.title1 {
+    font-size: 15px;
+    padding: 7px;
+}
+
+.title2 {
+    font-size: 12px;
+    padding: 3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inputLabel {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .imgContainer {
+    flex-shrink: 0;
+  }
+  
+  .img {
+    border-radius: 50%;
+    border: 1px solid white;
+    object-fit: cover;
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .role {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  

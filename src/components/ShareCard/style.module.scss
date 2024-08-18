@@ -1,0 +1,69 @@
+// .ShareCard {
+//     padding: 20px;
+// }
+
+.sendshare {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.daysDone {
+    color: var(--primary-color);
+}
+
+.daysDone1 {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userName {
+    padding: 7px;
+}
+
+.piska {
+    display: flex;
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.skip {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding-top: 5px;
+    text-decoration: underline;
+}
+
+.button {
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    // border: 2px solid firebrick;
+}
+.button2 {
+    padding: 10px;
+    // border: 2px solid firebrick;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.share {
+    font-size: 18px;
+}

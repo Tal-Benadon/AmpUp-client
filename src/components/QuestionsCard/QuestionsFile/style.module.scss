@@ -1,0 +1,138 @@
+@import "../../../global";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fileList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        overflow: hidden;
+
+        .detailsAndLoader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            width: 100%;
+            overflow: hidden;
+            transition: 0.3s;
+            // border: red solid 1px;
+
+            .details {
+                // border: blue solid 1px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                font-size: 15px;
+
+                p {
+                    white-space: nowrap;
+                    // text-overflow: ellipsis;
+                    // width: 100%;
+                    // overflow: hidden;
+                    overflow-x: scroll;
+                }
+
+                h5 {
+                    white-space: nowrap;
+                    font-weight: normal;
+                    color: rgb(208, 208, 208);
+                    margin-left: auto;
+                    font-size: inherit;
+                }
+            }
+
+            .loader {
+                width: 100%;
+                @extend .darkBackground;
+                overflow: hidden;
+                position: relative;
+                height: 5px;
+                border-radius: 5px;
+            }
+
+            .progressBar {
+                height: 100%;
+                background-color: #ffffff;
+                transition: width 0.5s;
+                /* Smooth animation */
+            }
+        }
+
+        .removeButton{
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 20px;
+            color: inherit;
+            
+        }
+
+    }
+}
+
+.icon {
+    @extend .darkBackground;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13.5px;
+}
+
+.Input {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px dashed white;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    @extend .lightBackground;
+}
+
+.Input2 {
+    display: none;
+}
+
+.title1 {
+    font-size: 15px;
+    padding: 7px;
+}
+
+.title2 {
+    font-size: 12px;
+    padding: 3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inputLabel {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.send {
+    width: 100%;
+}

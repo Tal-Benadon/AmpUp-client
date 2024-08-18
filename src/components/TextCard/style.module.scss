@@ -1,0 +1,102 @@
+@import '../../global';
+
+.TextCard {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    height: 84%;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    right: 0;
+    @extend .darkBackground;
+    align-items: center;
+}
+
+.Text {
+    padding: 10px 15px 10px 0;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding: 10px 0;
+}
+
+.content {
+    font-size: 16px;
+}
+
+.Text::-webkit-scrollbar {
+    width: 4px;
+    /* רוחב פס הגלילה האנכי */
+    height: 4px;
+    /* גובה פס הגלילה האופקי */
+}
+
+.Text::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    /* צבע פס הגלילה */
+    border-radius: 10px;
+    /* פינות מעוגלות */
+}
+
+.Text::-webkit-scrollbar-track {
+    background-color: #ffd15b58;
+    /* צבע הרקע של מסלול הגלילה */
+    border-radius: 0px;
+    /* פינות מעוגלות למסלול הגלילה */
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 15px 0;
+
+}
+
+.playpause {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.duration {
+    display: flex;
+    flex-direction: row;
+}
+
+.linesContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5px;
+}
+
+.line {
+    background-color: rgb(255, 255, 255);
+    width: 2px;
+}
+
+.buttonContainer {
+    margin-top: auto;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.doneButton {
+    width: 303px;
+}

@@ -1,0 +1,18 @@
+@import "../../../global";
+
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  .selected {
+    color: var(--primary-color);
+  }
+}
+
+.inactiveBtn {
+  pointer-events: none;
+  color: gray;
+}

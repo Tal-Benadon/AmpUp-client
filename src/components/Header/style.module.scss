@@ -1,0 +1,62 @@
+// .arrowIcon g {
+//     fill: rgb(255, 255, 255, 0.5) !important;
+// }
+
+// .arrowIcon path {
+//     stroke: rgb(255, 255, 255);
+// }
+
+// .arrowIcon svg {
+//     fill: rgb(255, 255, 255, 0.5) !important;
+//     color: rgb(255, 255, 255, 0.5);
+// }
+
+.Header{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    .progressAndIcon{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ProgressBar {
+        display: flex;
+        flex-direction: column;
+        flex-grow:2;
+        // align-items: start;
+        // height: 50px;
+        gap: 10px;
+        // margin: 15px 0 0 0;
+    }
+    
+    .cardfortoday {
+        font-size: 10px;
+        // margin: 0 0 10px 20px;
+    }
+}
+
+.arrowIcon{
+    background-color: rgba(255, 255, 255, 0.436);
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    // position: absolute;
+    // right: 15px;
+}
+
+// .progressAndIcon{
+//     display: flex  ;
+//     flex-direction: row;
+// }

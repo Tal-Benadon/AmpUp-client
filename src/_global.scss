@@ -1,0 +1,54 @@
+:root {
+   --primary-color: #FFD05B;
+   --text-color: #fff;
+   --border-radius: 20px;
+}
+
+.darkBackground {
+   background-color: #02020233;
+   backdrop-filter: blur(10px);
+}
+
+.lightBackground {
+   background-color: #FFFFFF33;
+   backdrop-filter: blur(10px);
+}
+
+
+// .gradient {
+//    background: rgb(0, 0, 0);
+//    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 95%, rgba(0, 0, 0, 0.7) 100%);
+// }
+
+.border {
+   border-width: 1px;
+   border-style: solid;
+   border-color: white;
+   // border-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 0, 0, 0)) 1;
+}
+
+
+
+
+.pageLayout {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+
+   &>main {
+      flex-grow: 1;
+      overflow-y: auto;
+      overflow: hidden;
+   }
+}
+
+@mixin gradient-overlay($URL) {
+   // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 0.7) 100%);
+   // overlay: url($URL);
+
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 30%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 0.7) 100%) url($URL) no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+
+}

@@ -1,0 +1,186 @@
+@import '../../global';
+
+
+.slotMachine {
+    @extend .pageLayout;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 25px;
+    margin-top: 30%
+}
+
+.slots {
+    @extend .lightBackground;
+    @extend .border;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    height: 170px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    direction: rtl;
+    position: relative;
+
+    .arrows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% + 25px * 2);
+        height: 37px;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.596));
+
+        .right {
+            height: 100%;
+            width: 30px;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            background-color: var(--text-color);
+        }
+
+        .left {
+            height: 100%;
+            width: 30px;
+            clip-path: polygon(100% 0, 0 50%, 100% 100%);
+            background-color: var(--text-color);
+        }
+    }
+
+    .slot {
+        @extend .lightBackground;
+        background-color: #ffffff16;
+        height: 100%;
+        width: 100%;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+
+        .belt {
+            animation: scrollBelt 4.5s ease-in-out calc(var(--index) * 0.12s) forwards;
+
+            @keyframes scrollBelt {
+                0% {
+                    transform: translateY(0px);
+                }
+
+                100% {
+                    transform: translateY(var(--scrollTo));
+                }
+            }
+
+            div {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+                height: 76px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+.winContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .plus {
+        animation: popUp 1s ease-in-out;
+        width: 100%;
+        border-radius: var(--border-radius);
+        @extend .lightBackground;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        div {
+            @extend .lightBackground;
+            padding: 20px;
+            aspect-ratio: 1;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    }
+
+    h1 {
+        animation: popUp 1s ease-in-out;
+    }
+    button{
+        margin-top: 10px;
+        animation: popUp 1s ease-in-out;
+    }
+}
+
+.win {
+    animation: popUp 1s ease-in-out;
+    @extend .lightBackground;
+    @extend .border;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: var(--border-radius);
+    padding: 30px 40px;
+    position: relative;
+
+    .tripel {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .slot {
+            font-size: 50px;
+        }
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inActive {
+    color: gray;
+    transition: 0.2s;
+}
+
+.skip {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--text-color);
+    font-size: 14px;
+    scale: 80%;
+}

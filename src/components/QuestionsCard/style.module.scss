@@ -1,0 +1,29 @@
+@import "../../global";
+
+.QuestionsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .questions {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    .button {
+      font-size: 25px;
+    }
+
+    .selected {
+      color: var(--primary-color);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../global';
+
+.Textarea {
+    border-radius: 20px;
+    padding: 18px;
+    resize: none;
+    width: 100%;
+    outline: none;
+    
+    textarea{
+        width: 100%;
+    }
+
+    &::placeholder {
+        color: rgba(253, 253, 253, 0.711);
+    }
+
+    @extend .lightBackground
+}
+
+.Textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+    display: flex;
+}
+
+.dotsPosition {
+    position: absolute;
+    top: 125px;
+    right: 20px;
+}

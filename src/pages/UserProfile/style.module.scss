@@ -1,0 +1,170 @@
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  background-color: #02020233;
+
+  .top {
+    padding: 50px;
+    .iconArrow {
+      display: flex;
+
+      svg {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: #8b8986;
+      }
+    }
+  }
+
+  .middle {
+    width: 100%;
+    height: 100%;
+    background-color: #02020233;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 25px;
+
+      .profileImg {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 1px solid white;
+        object-fit: cover;
+      }
+    }
+
+    .name {
+      height: 26px;
+      color: rgb(255, 255, 255);
+    }
+
+    .containerAbout {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+
+      .textAbout {
+        display: flex;
+        flex-direction: row;
+        color: #ffd05b;
+        font-weight: 50px;
+
+        .backtik {
+          justify-content: center;
+          align-items: center;
+        }
+
+        .text {
+          display: flex;
+          text-align: center;
+          font-size: larger;
+        }
+      }
+
+      .link {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .instaContainer {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        .instagram {
+          display: flex;
+          gap: 15px;
+          align-items: center;
+
+          .iconInsta {
+            display: flex;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background-color: #8b8986;
+            font-size: 30px;
+          }
+        }
+
+        .iconOut {
+          display: flex;
+          padding: 5px;
+          align-items: center;
+          svg {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    height: 100%;
+    background-color: #02020233;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+
+    .listOfChallenges {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 20px;
+      .listMap {
+        display: flex;
+        flex-direction: column;
+
+        .challengeInfo {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+          gap: 5px;
+
+          .iconActive {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .line {
+          width: 100%;
+          height: 2px;
+          background-color: rgba(138, 134, 134, 0.359);
+        }
+
+        &:last-child {
+          .line {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

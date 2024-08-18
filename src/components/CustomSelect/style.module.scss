@@ -1,0 +1,58 @@
+@import '../../global';
+
+.dropdownBtn {
+    font-size: 12px;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    // height: 40px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    &:focus {
+        outline: none;
+    }
+
+    @extend .lightBackground
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 7px;
+    // @extend .darkBackground;
+    // backdrop-filter: blur(20px);
+    background: linear-gradient(to left, #aa9891, #816357, #534139);
+    backdrop-filter: blur(10px);
+
+
+    &.open {
+        display: block;
+    }
+}
+
+.optionStyle {
+    font-size: 12px;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    // height: 40px;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+    @extend .lightBackground;
+
+    display: block;
+}

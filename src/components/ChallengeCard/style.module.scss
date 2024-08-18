@@ -1,0 +1,79 @@
+@import '../../global';
+
+.ChallengeCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    // border: 2px solid hotpink;
+}
+
+.title1 {
+    font-size: 12px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.hearttext {
+    padding: 0 0 10px 3px;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.questext {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin: -12px 0 -12px -25px;
+}
+
+.emoji {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hearticon {
+    background-color: var(--text-color);
+    width: 33px;
+    height: 25px;
+    border-radius: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconques {
+    background-color: var(--text-color);
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.active {
+    color: black;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    // transform: scale(1.1);
+    // transition: .9s;
+}
+
+.active path {
+    fill: rgb(0, 0, 0);
+}

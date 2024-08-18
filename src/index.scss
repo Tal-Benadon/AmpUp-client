@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import './global';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Sora", sans-serif;
+   scroll-behavior: smooth;
+}
+
+.pageLayout{
+   position: relative;
+}
+
+
+#root {
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/back.jpg) no-repeat;
+   color: var(--text-color);
+   max-width: 460px;
+   margin: 0 auto;
+   height: 100dvh;
+   border: 5px solid #000;
+   border-radius: 30px;
+   overflow-x: hidden;
+   overflow-y: auto;
+   z-index: -2000;
+   @include gradient-overlay("/back.jpg");
+
+}
+
+button,
+a {
+   cursor: pointer;
+   text-decoration: none;
+   color: inherit;
+}
+
+ul {
+   list-style: none;
+}

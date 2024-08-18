@@ -1,0 +1,116 @@
+@import '../../global';
+
+.teamScreen{
+    padding: 1rem;
+}
+.daysStreak{
+    font-size: 51px;
+    display: flex;
+    justify-content: center;
+
+}
+.daysStreak2{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.all{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.streak {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    @extend .lightBackground;
+    
+}
+
+.iconquestion {
+    display: flex;
+    margin: -15px 0 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    font-size: 12px;
+    text-align: center;
+}
+.all2{
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    @extend .lightBackground;
+    
+}
+.item {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 10px;
+    // border: 2px solid khaki;
+}
+.iconP{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    justify-content: center;
+    background-color: white;
+}
+.sum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    // border: 2px solid khaki;
+}
+.today{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50px;
+    display: flex;
+    @extend .lightBackground;
+}
+.total{
+    padding: 10px 10px 0 10px;
+    border-radius: 50px;
+    display: flex;
+}
+.collectbutton{
+    font-size: 15px;
+}
+.button{
+    width: 100%;
+    // height: 40px;
+    margin-top: 15px;
+
+}

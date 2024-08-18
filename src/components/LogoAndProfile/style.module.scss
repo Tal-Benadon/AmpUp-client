@@ -1,0 +1,24 @@
+@import "../../global";
+
+.logoAndProfile {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 20px;
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coins {
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+}

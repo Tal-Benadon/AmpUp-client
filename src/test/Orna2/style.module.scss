@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+@import "../../global";
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    &>img {
+        width: 5rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: #fff solid 1px;
+    }
+
+    .about {
+        color: #ffd05b;
+    }
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &>button,
+    input {
+        @extend .darkBackground;
+        @extend .border;
+        padding: 0.5rem;
+        border-radius: var(--border-radius);
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: left;
+
+    }
+}
+
+.skip{
+    text-decoration: underline;
+    font-size: smaller;
+    cursor: pointer;
+}

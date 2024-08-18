@@ -1,0 +1,33 @@
+.checkBox {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    background-color: #848181;
+    width: 41px;
+    height: 24px;
+    border-radius: 10.31px;
+    padding: 2px;
+    cursor: pointer;
+    transition: background 0.4s;
+  }
+  .checkBox input {
+    display: none;
+  }
+  .point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.4s;
+  }
+  .checkBox:has(input:checked) .point {
+    left: 19px;
+    background-color: #ffd05b;
+  }
+    .checkBox:has(input:checked) {
+    background: linear-gradient(to right, #ffffff, #848181);
+  }
+  

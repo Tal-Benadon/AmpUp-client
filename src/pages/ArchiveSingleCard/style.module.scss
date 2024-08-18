@@ -1,0 +1,56 @@
+.buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.arrowsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    align-items: center;
+}
+
+.right{
+    width: 20px;
+}
+
+.left{
+    width: 20px;
+}
+
+.NotClick{
+    opacity: 0.3;
+}
+
+.fullCards{
+    opacity: 0.3;
+}
+
+.fullColor{
+    opacity: 1;
+}
+
+.backIcon{
+    margin: 5px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 70px;
+    width: 36px;
+    color: white;
+    padding: 5px;
+}
+
+
+.cardContainer{
+   position: relative;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+   url('https://media.istockphoto.com/id/176979540/photo/happy-camper.jpg?s=2048x2048&w=is&k=20&c=txgm7Bm6o8KAIqcqpzHPDUlHPLrTjQFfcBxsxNeWhZY=');
+background-size: cover;
+background-position: center;
+}

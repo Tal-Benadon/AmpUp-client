@@ -1,0 +1,33 @@
+@import "../../global";
+
+
+.button {
+    @extend .lightBackground;
+    @extend .border;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    color: inherit;
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    // border: none;
+    // position: relative;
+    // overflow: visible;
+
+    //     .borderAnimation {
+    //         width: 110%;
+    //         height: 110%;
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         clip-path: inset(0);
+    //         background-color: white;
+
+
+
+    //     }
+}

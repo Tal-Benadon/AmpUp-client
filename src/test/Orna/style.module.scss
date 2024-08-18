@@ -1,0 +1,41 @@
+.orna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+.popup {
+  animation: slideInFromRight 0.6s ease-in-out;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  // transform: translateX(10%);
+
+  &.slideOutToRight {
+    animation: alternate-reverse slideOutToRight 0.6s ease-in-out;
+  }
+
+}
+
+@keyframes slideInFromRight {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    right: 100%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}

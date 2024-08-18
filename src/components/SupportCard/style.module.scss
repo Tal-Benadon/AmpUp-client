@@ -1,0 +1,77 @@
+@import '../../global';
+
+// .SupportCard {
+//     // padding: 20px;
+// }
+.inputicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.iconsend{
+    padding: 5px 10px;
+    width: 45px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+   @extend .lightBackground;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+
+    .button {
+        font-size: 25px;
+    }
+
+    .answer {
+        height: 45px;
+        display: flex;
+        justify-content: start;
+        padding: -20px;
+        font-size: 17px;
+    }
+
+    .selected {
+        padding: -90px;
+        color: var(--primary-color);
+    }
+}
+
+.sendsupport {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.daysDone {
+    color: var(--primary-color);
+}
+
+.userName {
+    padding: 7px;
+}
+
+.skip{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding-top: 5px;
+    text-decoration: underline;
+}

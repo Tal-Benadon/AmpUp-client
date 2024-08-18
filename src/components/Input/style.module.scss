@@ -1,0 +1,19 @@
+@import "../../global";
+
+.input {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    // border-radius: 7px;
+    color: var(--text-color);
+    @extend .lightBackground;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: none;
+}

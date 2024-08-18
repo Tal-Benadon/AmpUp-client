@@ -1,0 +1,24 @@
+.sendbutton {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    height: 60px;
+}
+
+
+
+.button {
+    width: 100%;
+}
+
+.inputAndButton {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inactiveBtn {
+    width: 100%;
+    color: gray;
+    pointer-events: none;
+}
